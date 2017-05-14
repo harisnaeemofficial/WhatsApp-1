@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="authWrapper" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="606.0" prefWidth="991.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="whatsapp.web.LoginController">
+    <stylesheets>
+        <URL value="@styles.css" />
+    </stylesheets>
+    <children>
+        <TextField id="tf" fx:id="tfLogInEmail" alignment="CENTER" layoutX="200.0" layoutY="353.0" onAction="#logIn" prefWidth="280.0" promptText="E-mail" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="300.0" />
+        <PasswordField id="tf" fx:id="tfLogInPass" alignment="CENTER" focusTraversable="false" layoutX="200.0" layoutY="383.0" onAction="#logIn" prefWidth="280.0" promptText="Password" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="300.0" />
+        <Label id="labelsGoTo" fx:id="labelGoToSignUpPage" focusTraversable="false" layoutX="200.0" layoutY="410.0" onMouseClicked="#goToSignUpPage" text="Registration" AnchorPane.leftAnchor="310.0" />
+        
+        <TextField id="tf" fx:id="tfSignUpName" alignment="CENTER" focusTraversable="false" layoutX="250.0" layoutY="353.0" onAction="#signUp" prefWidth="248.0" promptText="Full name" visible="false" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="300.0" />
+        <TextField id="tf" fx:id="tfSignUpEmail" alignment="CENTER" focusTraversable="false" layoutX="250.0" layoutY="383.0" onAction="#signUp" prefWidth="280.0" promptText="E-mail" visible="false" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="300.0" />
+        <PasswordField id="tf" fx:id="tfSignUpPass" alignment="CENTER" focusTraversable="false" layoutX="250.0" layoutY="413.0" onAction="#signUp" prefWidth="198.0" promptText="Password" visible="false" AnchorPane.leftAnchor="300.0" />
+        <PasswordField id="tf" fx:id="tfSignUpPassConf" alignment="CENTER" focusTraversable="false" layoutX="499.0" layoutY="413.0" onAction="#signUp" prefWidth="198.0" promptText="Confirm Password" visible="false" AnchorPane.rightAnchor="300.0" />
+        <Label id="labelsGoTo" fx:id="labelGoToLogInPage" focusTraversable="false" layoutX="300.0" layoutY="440.0" onMouseClicked="#goToLogInPage" text="Log in" visible="false" AnchorPane.leftAnchor="310.0" />
+        
+        <Label id="labelsLogin" fx:id="labelInform" focusTraversable="false" layoutX="220.0" layoutY="460.0" prefHeight="17.0" prefWidth="378.0" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="220.0" />
+        
+    </children>
+</AnchorPane>

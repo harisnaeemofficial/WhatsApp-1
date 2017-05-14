@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="homeAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="whatsapp.web.HomePageController">
+    <stylesheets>
+        <URL value="@styles.css" />
+    </stylesheets>
+   <children>
+      <GridPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="285.0" percentWidth="0.0" prefWidth="285.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="285.0" percentWidth="0.0" prefWidth="285.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="60.0" percentHeight="0.0" prefHeight="60.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <AnchorPane id="header" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label id="label" fx:id="labelUserName" focusTraversable="false" layoutX="79.0" layoutY="23.0" text="Wait.." AnchorPane.bottomAnchor="22.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="55.0" AnchorPane.topAnchor="22.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Button id="btn" focusTraversable="false" layoutX="187.0" layoutY="20.0" mnemonicParsing="false" onAction="#edit" text="..." AnchorPane.rightAnchor="15.0" />
+                  <Circle id="btn" fx:id="myAva" fill="DODGERBLUE" layoutX="51.0" layoutY="23.0" radius="25.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="7.0" />
+               </children></AnchorPane>
+            <AnchorPane id="headerCenter" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+               <children>
+                  <Label id="label" fx:id="nameOfFriend" focusTraversable="false" layoutX="97.0" layoutY="21.0" text="Wait..." AnchorPane.bottomAnchor="22.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="55.0" AnchorPane.topAnchor="22.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Button id="btn" fx:id="btnAdd" focusTraversable="false" layoutX="364.0" layoutY="20.0" mnemonicParsing="false" onAction="#createMultipleChat" text="+" AnchorPane.rightAnchor="15.0" />
+                  <Circle id="btn" fx:id="circleSmallAva" fill="DODGERBLUE" layoutX="37.0" layoutY="31.0" radius="25.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="7.0" />
+               </children></AnchorPane>
+            <AnchorPane id="header" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
+               <children>
+                  <Label id="label" focusTraversable="false" layoutX="47.0" layoutY="20.0" prefHeight="20.0" prefWidth="100.0" text="Contact info" AnchorPane.leftAnchor="15.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Button id="btn" focusTraversable="false" layoutX="144.0" layoutY="20.0" mnemonicParsing="false" onAction="#logOut" text="Log Out" AnchorPane.rightAnchor="15.0" />
+               </children></AnchorPane>
+            <AnchorPane id="friendsArea" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+               <children>
+                  <ComboBox id="tf" fx:id="comboBoxSearch" cacheHint="SPEED" editable="true" focusTraversable="false" layoutX="44.0" layoutY="25.0" onKeyPressed="#add" prefWidth="150.0" promptText="    Search " AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0" />
+                  <ListView id="white" fx:id="listView" focusTraversable="false" layoutY="85.0" onMouseClicked="#chooseInterlocutor" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="26.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="57.0">
+                     <padding>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </padding>
+                  </ListView>
+                  <Label fx:id="notification" focusTraversable="false" layoutX="49.0" layoutY="518.0" text="Designed by Makhanov Madiyar" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="46.0">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Label>
+                  <Button id="btn" focusTraversable="false" layoutX="218.0" layoutY="514.0" maxHeight="16.0" maxWidth="16.0" minHeight="16.0" minWidth="16.0" mnemonicParsing="false" onAction="#update" prefHeight="16.0" prefWidth="16.0" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="15.0" />
+               </children></AnchorPane>
+            <AnchorPane id="homeChatHistoryAreaBack" fx:id="centerAnchorPane" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <TextField id="tf" fx:id="homeMessageInput" focusTraversable="false" layoutX="77.0" layoutY="483.0" onAction="#sendMessage" prefHeight="25.0" prefWidth="343.0" promptText="    Enter message" visible="false" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding></TextField>
+               </children></AnchorPane>
+            <AnchorPane id="friendsArea" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <children>
+                  <ListView id="white" fx:id="contactInfo" focusTraversable="false" layoutX="14.0" layoutY="104.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding></ListView>
+               </children></AnchorPane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

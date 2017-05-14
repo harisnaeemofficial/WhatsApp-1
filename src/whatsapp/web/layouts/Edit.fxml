@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="286.0" prefWidth="410.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="whatsapp.web.EditController">
+    <stylesheets>
+        <URL value="@styles.css" />
+    </stylesheets>
+   <children>
+        <Circle id="btn" fx:id="circle" fill="DODGERBLUE" layoutX="115.0" layoutY="92.0" radius="70.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+        <Button id="btn" focusTraversable="false" layoutX="210.0" layoutY="79.0" mnemonicParsing="false" onAction="#chooseFile" text="choose file" AnchorPane.leftAnchor="210.0" AnchorPane.topAnchor="79.0" />
+        <TextField id="tf" fx:id="tfName" focusTraversable="false" layoutX="30.0" layoutY="185.0" onAction="#submit" prefHeight="25.0" prefWidth="170.0" promptText="    " AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="30.0" />
+        <TextField id="tf" fx:id="tfEmail" editable="false" focusTraversable="false" layoutX="16.0" layoutY="246.0" onMouseClicked="#tryUpdateEmail" prefHeight="25.0" prefWidth="170.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="30.0" />
+        <PasswordField id="tf" fx:id="newPass" focusTraversable="false" layoutX="195.0" layoutY="158.0" onAction="#submit" prefHeight="25.0" prefWidth="170.0" promptText="New Password" AnchorPane.bottomAnchor="80.0" AnchorPane.rightAnchor="30.0" />
+        <PasswordField id="tf" fx:id="confirmPass" focusTraversable="false" layoutX="195.0" layoutY="192.0" onAction="#submit" prefHeight="25.0" prefWidth="170.0" promptText="Confirm Password" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="30.0" />
+        <PasswordField id="tf" fx:id="curPass" focusTraversable="false" layoutX="210.0" layoutY="234.0" onAction="#submit" prefHeight="25.0" prefWidth="170.0" promptText="Current Password" AnchorPane.bottomAnchor="110.0" AnchorPane.rightAnchor="30.0" />
+        <Label fx:id="fileName" layoutX="290.0" layoutY="83.0" text="no file is chosen" AnchorPane.leftAnchor="290.0" AnchorPane.rightAnchor="30.0" />
+        <Button id="btn" focusTraversable="false" layoutX="225.0" layoutY="246.0" mnemonicParsing="false" onAction="#submit" prefHeight="25.0" prefWidth="75.0" text="Submit" AnchorPane.bottomAnchor="15.0" />
+        <Button id="btn" focusTraversable="false" layoutX="315.0" layoutY="232.0" mnemonicParsing="false" onAction="#cancel" prefHeight="25.0" prefWidth="75.0" text="Cancel" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="30.0" />
+        <Label fx:id="label" layoutX="30.0" layoutY="246.0" prefHeight="17.0" prefWidth="170.0" />
+   </children>
+</AnchorPane>

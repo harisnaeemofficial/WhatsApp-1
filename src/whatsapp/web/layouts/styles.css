@@ -1,0 +1,58 @@
+#authWrapper {
+    -fx-background-image: url(../images/authBackground.png) ;
+    -fx-background-size: cover;
+}
+
+#white {
+    -fx-background-color: #FFFFFF;
+    -fx-font-weight: bold; 
+}
+
+#labelsLogin {
+    -fx-alignment: center;
+    -fx-font-weight: bold; 
+    -fx-text-fill: #FF0000;
+}
+
+#labelsGoTo {
+    -fx-font-weight: bold; 
+    -fx-text-fill: #ADD5D4;
+}
+
+#comboBox {
+    -fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 3px, 3px, 2px, 1px;
+    -fx-padding: 0.333333em 0.666667em 0.333333em 0.666667em;
+    -fx-text-fill: -fx-text-base-color;
+    -fx-alignment: CENTER;
+    -fx-content-display: LEFT;
+    -fx-border-radius: 0;
+}
+#btn {
+    -fx-background-color: linear-gradient(#f0ff35, #a9ff00),radial-gradient(center 50% -40%, radius 200%, #b8ee36 45%, #80c800 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #395306;
+}
+
+#tf {
+ -fx-background-color: #DDF9C7,
+       linear-gradient(
+        to bottom,
+        derive(#DDF9C7,70%) 5%,
+        derive(#DDF9C7,90%) 40%
+       );
+}
+#label{
+    -fx-font-weight: bold; 
+ }
+
+#homeChatHistoryAreaBack {
+    -fx-background-size: cover;
+    -fx-background-image: url(../images/fon.png) ;
+}
+#header {
+    -fx-border-color: #DBDBDB;
+}
